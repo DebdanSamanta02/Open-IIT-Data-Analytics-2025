@@ -1,0 +1,12 @@
+:root {
+    --red: #E50914;
+    --black: #0F0F0F;
+    --white: #FFFFFF;
+    --background-color: #0F0F0F;
+    --font-color: var(--white);
+    --graph-color: rgba(30,30,30,0.85);
+}
+
+.tab-icon, .theme-switcher-icon {
+    filter: invert(1) grayscale(100%) brightness(100%);
+}
