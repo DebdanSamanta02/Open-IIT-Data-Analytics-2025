@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Sigmoid - Visualizations</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title {
+        color: white;
+        justify-self: center;
+    }
+    .heading {
+        color: #E50914;
+        justify-content: center;
+    }
+    .charts {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100vw;
+        justify-content: center;
+    }
+    .charts iframe {
+        min-width: 700px;
+    }
+</style>
+
+<body>
+    <h1 class="title">Visualizations</h1>
+    <h2 class="heading">Overview and Summary</h2>
+    <div class="charts">
+        <iframe src="./overview_charts/movies_vs_tv.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./overview_charts/content_release.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./overview_charts/audience.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./overview_charts/top_countries.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./overview_charts/language_devision.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./overview_charts/content_volume_over_year.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./overview_charts/genre_volume_over_year.html" width="50%" height="500px" style="border: none"></iframe>
+    </div>
+    <h2 class="heading">Temporal Visualizations</h2>
+    <div class="charts">
+        <iframe src="./temporal_analysis/Catalog_Growth_Trajectory.html" width="50%" height="500px" style="border: none;"></iframe>
+        <iframe src="./temporal_analysis/Heatmap_month.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./temporal_analysis/Lag_avg.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./temporal_analysis/moving_avg.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./temporal_analysis/decomp.html" width="50%" height="930px" style="border: none"></iframe>
+        <div style="display: flex; flex-direction: column; height: 935px;">
+            <iframe src="./temporal_analysis/my_interactive_plot.html" width="50%" height="500px" style="border: none"></iframe>
+            <iframe src="./temporal_analysis/Lag_hist.html" width="50%" height="500px" style="border: none"></iframe>
+        </div>
+    </div>
+    <h2 class="heading">Geographic Visualizations</h2>
+    <div class="charts">
+        <iframe src="./geographic_insights/interactive_world_map.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./geographic_insights/top_countries.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./geographic_insights/avg_rating.html" width="100%" height="820px" style="border: none"></iframe>
+        <iframe src="./geographic_insights/genre_concentration.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./geographic_insights/geographic_diversity_index.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./geographic_insights/geographic_diversity_index.html" width="50%" height="500px" style="border: none"></iframe>
+    </div>
+    <h2 class="heading">Genre and Category Visualizations</h2>
+    <div class="charts">
+        <iframe src="./genre_intelligence/genre_category_visualization/02_overall_genre_composition_treemap.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/genre_category_visualization/03_top_10_genres_bar_chart.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/genre_category_visualization/04_genre_popularity_evolution_line.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/genre_category_visualization/05_genre_focus_segmentation_movie_vs_tv.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/genre_category_visualization/06_underrepresented_niche_genres.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/genre_category_visualization/08_genre_vs_content_rating_heatmap.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/genre_category_visualization/09_audience_targeting_strategy_stacked_bar.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/genre_category_visualization/10_temporal_content_maturity_shift.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/genre_category_visualization/11_multi_genre_combination_heatmap.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/genre_category_visualization/12_multi_genre_combination_bar_chart_pairs.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/genre_category_visualization/14_multi_genre_network_graph.html" width="50%" height="600px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/genre_category_visualization/genre_rating_gaps.html" width="50%" height="600px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/genre_category_visualization/sankey_genre_cooccurrence.html" width="50%" height="730px" style="border: none"></iframe>
+    </div>
+    <h2 class="heading">Content Creator Visualizations</h2>
+    <div class="charts">
+        <iframe src="./creator_analysis/02_director_versatility_scatter.html" width="50%" height="620px" style="border: none"></iframe>
+        <iframe src="./creator_analysis/04_top_actors_bar.html" width="50%" height="620px" style="border: none"></iframe>
+        <iframe src="./creator_analysis/05_actor_genre_diversity.html" width="50%" height="620px" style="border: none"></iframe>
+        <iframe src="./creator_analysis/06_director_career_timeline_bar.html" width="50%" height="620px" style="border: none"></iframe>
+        <iframe src="./creator_analysis/08_actor_type_box.html" width="50%" height="620px" style="border: none"></iframe>
+        <iframe src="./creator_analysis/11_actor_career_timeline.html" width="50%" height="620px" style="border: none"></iframe>
+        <iframe src="./creator_analysis/12_genre_popularity.html" width="50%" height="620px" style="border: none"></iframe>
+    </div>
+    <h2 class="heading">Rating and Audience Visualizations</h2>
+    <div class="charts">
+        <iframe src="./genre_intelligence/rating_and_audience/top_genres-ratings.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/rating_and_audience/sweet_spot.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/rating_and_audience/severity_genre_diversity.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/rating_and_audience/severity.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/rating_and_audience/sankey_diagram.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/rating_and_audience/rating_trends_year.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/rating_and_audience/geo_vs_audience.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/rating_and_audience/genre_rating.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/rating_and_audience/feature_importance.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/rating_and_audience/family_friendly_score.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/rating_and_audience/edginess_trend.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/rating_and_audience/early_recent_additions.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/rating_and_audience/duration_rating.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/rating_and_audience/directors_multiple_titles.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/rating_and_audience/content_diversity_index.html" width="50%" height="820px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/rating_and_audience/bar_chart_countries.html" width="50%" height="820px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/rating_and_audience/audience_type_trends.html" width="50%" height="500px" style="border: none"></iframe>
+        <iframe src="./genre_intelligence/rating_and_audience/TV_vs_movie_ratings.html" width="50%" height="500px" style="border: none"></iframe>
+    </div>
+    <h2 class="heading">Duration and Format Visualizations</h2>
+    <div class="charts">
+        <iframe src="./advanced_charts/duration_and_format/average_movie_duration_top5_genres.html" width="50%" height="600px" style="border: none"></iframe>
+        <iframe src="./advanced_charts/duration_and_format/average_tv_seasons_top5_genres.html" width="50%" height="600px" style="border: none"></iframe>
+        <iframe src="./advanced_charts/duration_and_format/content_lag_top_5_genres.html" width="50%" height="600px" style="border: none"></iframe>
+        <iframe src="./advanced_charts/duration_and_format/least_10_genres_evolution_2008_2021.html" width="50%" height="600px" style="border: none"></iframe>
+        <iframe src="./advanced_charts/duration_and_format/movie_genre_evolution_netflix.html" width="50%" height="600px" style="border: none"></iframe>
+        <iframe src="./advanced_charts/duration_and_format/top_10_genre_combinations_over_time.html" width="50%" height="600px" style="border: none"></iframe>
+        <iframe src="./advanced_charts/duration_and_format/top_10_genres_evolution_2008_2021.html" width="50%" height="600px" style="border: none"></iframe>
+        <iframe src="./advanced_charts/duration_and_format/top_5_genres_burst_2008_2021.html" width="50%" height="600px" style="border: none"></iframe>
+        <iframe src="./advanced_charts/duration_and_format/top_declining_genres_bar.html" width="50%" height="620px" style="border: none"></iframe>
+        <iframe src="./advanced_charts/duration_and_format/top_emerging_declining_genres_bar.html" width="50%" height="620px" style="border: none"></iframe>
+        <iframe src="./advanced_charts/duration_and_format/tv_show_genre_evolution_netflix.html" width="50%" height="600px" style="border: none"></iframe>
+    </div>
+    <h2 class="heading">Advanced Visualizations</h2>
+    <div class="charts">
+        <iframe src="./advanced_charts//nlp_charts/genre_topic_heatmap.html" width="30%" height="700px" style="border: none"></iframe>
+        <iframe src="./advanced_charts//nlp_charts/keyword_network.html" width="40%" height="700px" style="border: none"></iframe>
+        <iframe src="./advanced_charts//nlp_charts/lda_topic_0.html" width="40%" height="500px" style="border: none"></iframe>
+        <iframe src="./advanced_charts//nlp_charts/lda_topic_1.html" width="40%" height="500px" style="border: none"></iframe>
+        <iframe src="./advanced_charts//nlp_charts/lda_topic_2.html" width="40%" height="500px" style="border: none"></iframe>
+        <iframe src="./advanced_charts//nlp_charts/lda_topic_3.html" width="40%" height="500px" style="border: none"></iframe>
+        <iframe src="./advanced_charts//nlp_charts/lda_topic_4.html" width="40%" height="500px" style="border: none"></iframe>
+        <iframe src="./advanced_charts//nlp_charts/lda_topic_5.html" width="40%" height="500px" style="border: none"></iframe>
+        <iframe src="./advanced_charts//nlp_charts/lda_topic_6.html" width="40%" height="500px" style="border: none"></iframe>
+        <iframe src="./advanced_charts//nlp_charts/lda_topic_7.html" width="40%" height="500px" style="border: none"></iframe>
+        <iframe src="./advanced_charts//nlp_charts/lda_topic_8.html" width="40%" height="500px" style="border: none"></iframe>
+        <iframe src="./advanced_charts//nlp_charts/lda_topic_9.html" width="40%" height="500px" style="border: none"></iframe>
+        <iframe src="./advanced_charts//nlp_charts/readability_hist.html" width="40%" height="500px" style="border: none"></iframe>
+        <iframe src="./advanced_charts//nlp_charts/sentiment_by_genre.html" width="40%" height="500px" style="border: none"></iframe>
+        <iframe src="./advanced_charts//nlp_charts/sentiment_time.html" width="40%" height="500px" style="border: none"></iframe>
+        <iframe src="./advanced_charts//nlp_charts/top_bigrams.html" width="40%" height="500px" style="border: none"></iframe>
+        <iframe src="./advanced_charts//nlp_charts/top_trigrams.html" width="40%" height="500px" style="border: none"></iframe>
+        <iframe src="./advanced_charts//nlp_charts/top_unigrams.html" width="40%" height="500px" style="border: none"></iframe>
+        <h3>Word Clouds</h3>
+        <img src="./advanced_charts/wordclouds/wordcloud_genre_Action_&_Adventure.png" alt="" height="400px">
+        <img src="./advanced_charts/wordclouds/wordcloud_genre_Comedies.png" alt="" height="400px">
+        <img src="./advanced_charts/wordclouds/wordcloud_genre_Documentaries.png" alt="" height="400px">
+        <img src="./advanced_charts/wordclouds/wordcloud_genre_Dramas.png" alt="" height="400px">
+        <img src="./advanced_charts/wordclouds/wordcloud_genre_International_Movies.png" alt="" height="400px">
+        <img src="./advanced_charts/wordclouds/wordcloud_genre_International_TV_Shows.png" alt="" height="400px">
+        <img src="./advanced_charts/wordclouds/wordcloud_global.png" alt="" height="400px">
+    </div>
+</body>
+</html>
