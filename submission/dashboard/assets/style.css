@@ -1,0 +1,503 @@
+:root {
+    --red: #E50914;
+    --black: #0F0F0F;
+    --white: #FFFFFF;
+}
+
+html, body {
+    background-color: var(--black);
+    margin: 0px;
+}
+
+h1, h2, h3, p {
+    color: var(--white);
+}
+
+.tab-icon.active {
+    filter: invert(13%) sepia(99%) saturate(4000%) hue-rotate(345deg) brightness(100%) contrast(150%);
+}
+
+.tab-icon, .theme-switcher-icon {
+    filter: invert(1) grayscale(100%) brightness(100%);
+}
+
+.tab-icon:hover {
+    filter: invert(13%) sepia(99%) saturate(4000%) hue-rotate(345deg) brightness(100%) contrast(150%);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 32px 32px 10px;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* exec overview */
+
+.exec-overview  {
+    display: flex;
+    flex-direction: column;
+}
+
+/* content explorer */
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* trend intelligence */
+
+.trend {
+    display: flex;
+    flex-direction: column;
+}
+
+/* geographic insights */
+
+.geo-insights {
+    display: flex;
+    flex-direction: column;
+}
+
+/* genre and category intelligence */
+
+.genre-int {
+    display: flex;
+    flex-direction: column;
+}
+
+/* creator and talent hub */
+
+.creator-talent {
+    display: flex;
+    flex-direction: column;
+}
+
+/* strategic recommendations */
+
+.strat-recom {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Red styling for year range slider */
+.year-slider .rc-slider-track {
+    background-color: #E50914 !important;
+}
+
+.year-slider .rc-slider-handle {
+    border-color: #E50914 !important;
+    background-color: #E50914 !important;
+}
+
+.year-slider .rc-slider-handle:hover,
+.year-slider .rc-slider-handle:focus,
+.year-slider .rc-slider-handle:active {
+    border-color: #E50914 !important;
+    box-shadow: 0 0 0 5px rgba(229, 9, 20, 0.2) !important;
+}
+
+.year-slider .rc-slider-dot-active {
+    border-color: #E50914 !important;
+}
+
+.year-slider .rc-slider-rail {
+    background-color: #333 !important;
+}
+
+/* Dropdown styling for better height control */
+.Select-control {
+    background-color: #1b1b1b !important;
+    border-color: rgba(229, 9, 20, 0.5) !important;
+    min-height: 42px !important;
+}
+
+.Select-menu-outer {
+    background-color: #1b1b1b !important;
+    border-color: rgba(229, 9, 20, 0.5) !important;
+}
+
+.Select-option {
+    background-color: #1b1b1b !important;
+    color: white !important;
+}
+
+.Select-option:hover {
+    background-color: #333 !important;
+}
+
+.Select-option.is-selected {
+    background-color: #E50914 !important;
+}
+
+.VirtualizedSelectOption {
+    background-color: #1b1b1b !important;
+    color: white !important;
+}
+
+.VirtualizedSelectOption:hover {
+    background-color: #333 !important;
+}
+
+/* Animation for detail modal */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.detail-modal-animation {
+    animation: slideIn 0.3s ease-out;
+}
+
+/* Button hover effects */
+button:hover {
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Filter dropdown custom styling */
+.filter-dropdown .Select-control {
+    background-color: #1b1b1b;
+    border: 1px solid rgba(229, 9, 20, 0.5);
+    padding: 0px;
+}
+
+.filter-dropdown .Select-value-label {
+    color: white !important;
+    align-items: center;
+}
+
+.filter-dropdown .Select-placeholder {
+    color: white !important;
+    align-items: center;
+}
+
+/* Existing CSS... (keep all your previous CSS) */
+
+/* Table row hover effect */
+.dash-table-container tr:hover {
+    background-color: #2a2a2a !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s ease;
+}
+
+.dash-table-container tbody tr:hover td {
+    background-color: #2a2a2a !important;
+}
+
+/* Popup animations */
+@keyframes popupFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes popupSlideIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -48%) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+#popup-overlay {
+    animation: popupFadeIn 0.1s ease-out;
+}
+
+#popup-content {
+    animation: popupSlideIn 0.1s ease-out;
+}
+
+/* Scrollbar styling for popup */
+#popup-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+#popup-content::-webkit-scrollbar-track {
+    background: #0a0a0a;
+    border-radius: 10px;
+}
+
+#popup-content::-webkit-scrollbar-thumb {
+    background: #E50914;
+    border-radius: 10px;
+}
+
+#popup-content::-webkit-scrollbar-thumb:hover {
+    background: #c70812;
+}
+
+/* DataTable Pagination Styling */
+.dash-table-container .paging-container {
+    background-color: #1b1b1b !important;
+    border-top: 1px solid #333 !important;
+    padding: 16px 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    border-radius: 0 !important;
+}
+
+.dash-table-container .paging-container .paging-nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    flex-wrap: wrap !important;
+}
+
+.dash-table-container .paging-container .paging-nav button {
+    background-color: #333 !important;
+    color: white !important;
+    border: 1px solid #555 !important;
+    border-radius: 6px !important;
+    padding: 8px 14px !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    min-width: 40px !important;
+    height: 38px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-family: 'Segoe UI', sans-serif !important;
+}
+
+.dash-table-container .paging-container .paging-nav button:hover:not(:disabled) {
+    background-color: #E50914 !important;
+    border-color: #E50914 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 2px 8px rgba(229, 9, 20, 0.3) !important;
+}
+
+.dash-table-container .paging-container .paging-nav button:active:not(:disabled) {
+    transform: translateY(0) !important;
+    box-shadow: 0 1px 4px rgba(229, 9, 20, 0.2) !important;
+}
+
+.dash-table-container .paging-container .paging-nav button:disabled {
+    background-color: #1a1a1a !important;
+    color: #666 !important;
+    border-color: #2a2a2a !important;
+    cursor: not-allowed !important;
+    opacity: 0.5 !important;
+}
+
+.dash-table-container .paging-container .paging-nav button.current-page {
+    background-color: white !important;
+    border-color: white !important;
+    color: black !important;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2) !important;
+    font-weight: 700 !important;
+}
+
+.dash-table-container .paging-container .paging-nav .paging-page-info {
+    color: white !important;
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
+    margin: 0 12px !important;
+    padding: 8px 16px !important;
+    background-color: #2a2a2a !important;
+    border-radius: 6px !important;
+    border: 1px solid #444 !important;
+    font-family: 'Segoe UI', sans-serif !important;
+    min-width: 100px !important;
+    text-align: center !important;
+}
+
+/* Alternative pagination styling for different Dash versions */
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-menu-container {
+    background-color: #1b1b1b !important;
+}
+
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .row {
+    background-color: transparent !important;
+}
+
+div.last-page {
+    color: white !important;
+    font-size: 0.95rem !important;
+}
+
+div.page-number {
+    color: white !important;
+}
+
+input.current-page {
+    border-radius: 8px !important;
+    font-size: 1rem !important;
+}
+
+/* Pagination buttons using more specific selectors */
+.dash-table-container button.first-page,
+.dash-table-container button.previous-page,
+.dash-table-container button.next-page,
+.dash-table-container button.last-page {
+    background-color: #333 !important;
+    color: white !important;
+    border: 1px solid #555 !important;
+    border-radius: 6px !important;
+    padding: 8px 12px !important;
+    font-size: 1rem !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    min-width: 42px !important;
+    height: 38px !important;
+}
+
+.dash-table-container button.first-page:hover:not(:disabled),
+.dash-table-container button.previous-page:hover:not(:disabled),
+.dash-table-container button.next-page:hover:not(:disabled),
+.dash-table-container button.last-page:hover:not(:disabled) {
+    background-color: #E50914 !important;
+    border-color: #E50914 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 2px 8px rgba(229, 9, 20, 0.3) !important;
+}
+
+.dash-table-container button.first-page:disabled,
+.dash-table-container button.previous-page:disabled,
+.dash-table-container button.next-page:disabled,
+.dash-table-container button.last-page:disabled {
+    background-color: #1a1a1a !important;
+    color: #666 !important;
+    border-color: #2a2a2a !important;
+    cursor: not-allowed !important;
+    opacity: 0.5 !important;
+}
+
+/* Ensure all text in pagination container is white by default */
+.dash-table-container .paging-container {
+    color: white !important;
+}
+
+/* Page number display styling - ensure spans, divs, and page info are white */
+.dash-table-container .paging-container span,
+.dash-table-container .paging-container div,
+.dash-table-container .paging-container .paging-page-info {
+    color: white !important;
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
+    font-family: 'Segoe UI', sans-serif !important;
+}
+
+/* Override button text color - buttons have their own styling defined above */
+.dash-table-container .paging-container button {
+    color: white !important;
+}
+
+/* Current page button - black text on white background (overrides above) */
+.dash-table-container .paging-container button.current-page {
+    color: black !important;
+    background-color: white !important;
+}
+
+/* Ensure pagination container fits within the table container */
+.dash-table-container .dash-spreadsheet-container {
+    border-radius: 0 !important;
+    overflow: hidden !important;
+}
+
+/* 🔒 FINAL override to remove Dash DataTable focus/magenta border */
+.dash-cell.focused,
+.dash-cell.dash-cell--focused,
+.dash-spreadsheet td.focused,
+.dash-spreadsheet td.dash-cell--focused,
+.dash-spreadsheet td.active,
+.dash-cell.active {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #181818 !important; /* match your table */
+  color: white !important;
+}
+
+/* Kill Dash's inner focus ring that sometimes forces magenta */
+.dash-cell.focused::after,
+.dash-cell.dash-cell--focused::after,
+.dash-spreadsheet td.focused::after,
+.dash-spreadsheet td.dash-cell--focused::after {
+  content: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Prevent inherited table outline */
+.dash-spreadsheet-container:focus-within,
+.dash-table-container:focus-within {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.Select-control {
+  border: 1px solid #E50914 !important;
+  background-color: #1b1b1b !important;
+  color: white !important;
+  transition: all 0.25s ease-in-out;
+}
+
+.Select-control:hover {
+  border-color: #ff4444 !important;
+  box-shadow: 0 0 8px rgba(229, 9, 20, 0.4);
+}
+
+.Select-value-label {
+  color: white !important;
+}
+
+.Select-menu-outer {
+  background-color: #1b1b1b !important;
+  border: 1px solid #E50914 !important;
+}
+
+.year-slider .rc-slider-track {
+  background-color: #E50914 !important;
+}
+.year-slider .rc-slider-handle {
+  border: solid 2px #E50914 !important;
+  background-color: #121212 !important;
+}
+.year-slider .rc-slider-rail {
+  background-color: #3a3a3a !important;
+}
+.year-slider .rc-slider-dot-active {
+  border-color: #E50914 !important;
+}
+.year-slider .rc-slider-tooltip-inner {
+  background-color: #E50914 !important;
+  color: white !important;
+}
+

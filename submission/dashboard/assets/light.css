@@ -1,0 +1,187 @@
+:root {
+    --red: #E50914;
+    --white: #0F0F0F;
+    --black: #FFFFFF;
+    --background-color: #FFFFFF;
+    --font-color: var(--white);
+    --graph-color: var(--black);
+    --netflix-dark-color: #B00710;
+    --body-color: #FFFFFF;
+    --cell-color: #f8f8f8;
+    --conditional-cell-color: #f0f0f0;
+    --hover-cell-color: #e8e8e8;
+    --muted-text: #666666;
+    --heading-weight: 700;
+    --subheading-weight: 600;
+    --card-radius: 16px;
+    --transition-speed: 0.3s;
+    --border-color: rgba(0, 0, 0, 0.1);
+    --dropdown-bg: var(--background-color);
+    --dropdown-text: var(--font-color);
+    --button-secondary: #e0e0e0;
+    --button-secondary-text: #333333;
+    --stats-bg: #f5f5f5;
+    --grid-color-light: #DDDDDD;
+    --card-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.tab-icon, .theme-switcher-icon {
+    filter: invert(1) brightness(7%);
+}
+
+/* Dropdown Styling */
+.Select-control {
+    background-color: var(--dropdown-bg) !important;
+    border-color: var(--border-color) !important;
+    border-radius: 8px !important;
+}
+
+.Select-menu-outer {
+    background-color: var(--dropdown-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 6px !important;
+    margin-top: 4px !important;
+}
+
+.Select-value-label {
+    color: var(--dropdown-text) !important;
+}
+
+.Select-placeholder, .Select--single > .Select-control .Select-value {
+    color: var(--muted-text) !important;
+}
+
+.Select-option {
+    background-color: var(--dropdown-bg) !important;
+    color: var(--dropdown-text) !important;
+}
+
+.Select-option:hover {
+    background-color: var(--hover-cell-color) !important;
+}
+
+.Select-input > input {
+    color: var(--dropdown-text) !important;
+}
+
+.is-focused:not(.is-open) > .Select-control {
+    border-color: var(--red) !important;
+    box-shadow: 0 0 0 1px var(--red) !important;
+}
+
+/* Input Styling */
+input {
+    background-color: var(--dropdown-bg) !important;
+    color: var(--dropdown-text) !important;
+    border-color: var(--border-color) !important;
+}
+
+input::placeholder {
+    color: var(--muted-text) !important;
+    opacity: 0.8 !important;
+}
+
+/* Table Styling */
+.dash-table-container {
+    border-radius: var(--card-radius) !important;
+    overflow: hidden !important;
+    transition: all var(--transition-speed) ease !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+}
+
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner input::placeholder {
+    color: var(--muted-text) !important;
+    transition: color var(--transition-speed) ease !important;
+}
+
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th {
+    background-color: var(--red) !important;
+    color: white !important;
+    border-radius: 0 !important;
+}
+
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td {
+    border-radius: 0 !important;
+}
+
+/* Popup Card Styling */
+#popup-content {
+    background-color: var(--background-color) !important;
+}
+
+#popup-content h2,
+#popup-content h3,
+#popup-content p,
+#popup-content div {
+    color: var(--font-color) !important;
+}
+
+#popup-details div[style*="color: #999"] {
+    color: var(--muted-text) !important;
+}
+
+#popup-content div[style*="border-bottom"] {
+    border-bottom-color: var(--border-color) !important;
+}
+
+/* Button Styling */
+button.stats-button {
+    background-color: var(--button-secondary) !important;
+    color: var(--button-secondary-text) !important;
+    border-radius: calc(var(--card-radius) / 2) !important;
+    transition: all var(--transition-speed) ease !important;
+    font-weight: var(--subheading-weight) !important;
+}
+
+button.stats-button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: var(--card-shadow) !important;
+}
+
+/* Stats Panel */
+.stats-panel {
+    background-color: var(--stats-bg) !important;
+    border-radius: var(--card-radius) !important;
+    transition: all var(--transition-speed) ease !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+}
+
+/* Range Slider */
+.rc-slider-rail {
+    background-color: var(--border-color) !important;
+    height: 4px !important;
+}
+
+.rc-slider-track {
+    background-color: var(--red) !important;
+    height: 4px !important;
+}
+
+.rc-slider-handle {
+    border: 2px solid var(--red) !important;
+    background-color: var(--background-color) !important;
+    opacity: 1 !important;
+    width: 14px !important;
+    height: 14px !important;
+    margin-top: -5px !important;
+    transition: all var(--transition-speed) ease !important;
+}
+
+.rc-slider-handle:hover {
+    transform: scale(1.2) !important;
+    border-color: var(--red) !important;
+}
+
+.rc-slider-handle:active {
+    box-shadow: 0 0 0 4px rgba(229,9,20,0.2) !important;
+}
+
+.rc-slider-mark-text {
+    color: var(--muted-text) !important;
+    font-size: 0.8rem !important;
+    transition: color var(--transition-speed) ease !important;
+}
+
